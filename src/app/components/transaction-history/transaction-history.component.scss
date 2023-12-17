@@ -28,7 +28,7 @@
 }
 
 .headings {
-    background-color: lightgray;
+    background-color: $gray_color;
     color: $primary_color;
     font-size: 13px;
 }
@@ -116,7 +116,7 @@ td {
 .search-bar {
     height: 17px;
     margin-right: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     border: 1px solid $gray_color;
     border-left: 0px;
     border-top-right-radius: 5px;
