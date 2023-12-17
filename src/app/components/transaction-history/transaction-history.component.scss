@@ -1,185 +1,188 @@
 @import '~/../../../../styles.scss';
 
-.criteria{
+.criteria {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    p{
-        margin:0px;
+
+    p {
+        margin: 0px;
         font-weight: bold;
         font-size: 13px;
         color: $primary_color;
     }
 }
 
-.transaction-history-card{
-    width:690px;
+.transaction-history-card {
+    width: 690px;
     background-color: $secondary_color;
     padding: 25px;
-    margin-top:6px;
-    margin-left:30px;
+    margin-top: 6px;
+    margin-left: 30px;
     padding-top: 4px;
 }
 
-.filters{
+.filters {
     display: flex;
     flex-direction: row;
 }
 
-.headings{
+.headings {
     background-color: $gray_color;
     color: $primary_color;
     font-size: 13px;
-    // padding:6px;
-    
 }
 
-table{
-    width:690px;
+table {
+    width: 690px;
     border: 1px solid $gray_color;
     border-collapse: collapse;
 }
 
-th{
+th {
     border: 1px solid $gray_color;
     border-collapse: collapse;
-    padding-top:3px;
+    padding-top: 3px;
     padding-bottom: 3px;
 }
 
-td{
+td {
     border: 1px solid $gray_color;
     border-collapse: collapse;
-    padding-left:8px;
+    padding-left: 8px;
 }
 
-.txt-styling{
+.txt-styling {
     color: $primary_color;
-    font-size:11px;
+    font-size: 11px;
     font-weight: bold
 }
 
-.txt-styling1{
+.txt-styling1 {
     color: $gray_color;
-    font-size:11px;
+    font-size: 11px;
     font-weight: bold
 }
 
-.green-txt{
+.green-txt {
     color: green;
     font-size: 11px;
     font-weight: bold;
 }
 
-.red-txt{
+.red-txt {
     color: red;
     font-size: 11px;
     font-weight: bold;
 }
 
-.orange-txt{
+.orange-txt {
     color: orange;
     font-size: 11px;
     font-weight: bold;
 }
 
-.search-bar{
-    height:17px;
-    margin-right:8px;
-    margin-bottom:4px;
+.search-bar {
+    height: 17px;
+    margin-right: 8px;
+    margin-bottom: 4px;
     border: 1px solid $gray_color;
-    border-left:0px ;
+    border-left: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    width:100px
+    width: 100px
 }
 
-.search{
+.search {
     color: $gray_color;
     font-size: 11px;
-    border:1px solid $gray_color;
-    height:20px;
-    padding:3px;
-    padding-top:4px;
+    border: 1px solid $gray_color;
+    height: 20px;
+    padding: 3px;
+    padding-top: 4px;
     border-right: 0px;
-    padding-left:2px;
+    padding-left: 2px;
     border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;;
+    border-bottom-left-radius: 5px;
+    ;
 }
 
 input:focus {
     outline: none !important;
     border-width: 1px solid $gray_color;
-    border-left:0px;
+    border-left: 0px;
 }
 
-.filter{
+.filter {
     display: flex;
     flex-direction: row;
-    padding-top:3px;
-    margin-left:4px;    
-    border:1px solid $gray_color;
-    width:70px;
-    height:16px;
-    border-radius:4px;
-    fa-icon{
+    padding-top: 3px;
+    margin-left: 4px;
+    border: 1px solid $gray_color;
+    width: 70px;
+    height: 16px;
+    border-radius: 4px;
+
+    fa-icon {
         font-size: 10px;
-        margin-top:3px;
+        margin-top: 3px;
         margin-right: 3px;
         margin-left: 3px;
     }
 
-    p{
+    p {
         margin: 0px;
     }
 }
-  
-.filters1{
+
+.filters1 {
     display: flex;
     flex-direction: row;
     border: 1px solid $gray_color;
     color: $gray_color;
     font-size: 12px;
-    padding:6px;
-    padding-top:3px;
+    padding: 6px;
+    padding-top: 3px;
     // padding-bottom: 0px;
     border-radius: 4px;
-    height:10px;
+    height: 10px;
     margin-left: 6px;
-    fa-icon{
-        margin-right:3px;
+
+    fa-icon {
+        margin-right: 3px;
     }
-    p{
-        margin:0px;
+
+    p {
+        margin: 0px;
         color: $primary_color;
     }
 }
 
-.name{
-    margin:0px;
+.name {
+    margin: 0px;
 }
 
-.txt-flex{
+.txt-flex {
     display: flex;
     color: $primary_color;
-    font-size:12px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 
-.name{
+.name {
     margin: 0px;
-    padding-top:4px;
+    padding-top: 4px;
 }
 
-.short-name{
-    border:1px solid $gray_color;
-    font-size:8px;
+.short-name {
+    border: 1px solid $gray_color;
+    font-size: 8px;
     margin: 0px;
     margin-top: 3px;
-    margin-bottom:3px;
-    margin-right:12px;
-    padding:2px;
+    margin-bottom: 3px;
+    margin-right: 12px;
+    padding: 2px;
     border-radius: 12px;
     background-color: lightgreen;
     color: $primary_color;
