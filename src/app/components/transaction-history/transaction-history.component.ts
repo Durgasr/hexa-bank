@@ -16,8 +16,6 @@ export class TransactionHistoryComponent implements OnInit {
   public transactionHistory: any[] = [];
   public dotsIcon = faEllipsisH;
   public searchIcon = faSearch;
-  public upArrow = faAngleUp;
-  public downArrow = faAngleDown;
 
   constructor(private dataService: DataService) { }
 
@@ -31,10 +29,8 @@ export class TransactionHistoryComponent implements OnInit {
     })
   }
 
-
   getShortName(fullName:any) {
     return fullName.split(' ').map((n:any) => n[0]).join('');
   }
-
 
 }

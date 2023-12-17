@@ -4,7 +4,7 @@
         <div class="filters">
             <div>
                 <fa-icon [icon]="searchIcon" class="search"></fa-icon>
-                <input type="text" [(ngModel)]="query" id="search" placeholder="Search" class="search-bar"/>
+                <input type="text" [(ngModel)]="query" id="search" placeholder="Search" class="search-bar" />
             </div>
             <div class="filter">
                 <fa-icon [icon]="filterIcon"></fa-icon>
@@ -28,7 +28,10 @@
         </tr>
         <tr *ngFor="let history of transactionHistory | filter: query">
             <td class="txt-styling">{{history.date | date:'mediumDate'}}</td>
-            <td class="txt-flex"><p class="short-name">{{getShortName(history.name)}}</p><p class="name">{{history.name}}</p></td>
+            <td class="txt-flex">
+                <p class="short-name">{{getShortName(history.name)}}</p>
+                <p class="name">{{history.name}}</p>
+            </td>
             <td [ngClass]="history.status=='Success'?'green-txt':history.status=='Failed'?'red-txt':'orange-txt'">
                 {{history.status}}</td>
             <td class="txt-styling1">{{history.type}}</td>
