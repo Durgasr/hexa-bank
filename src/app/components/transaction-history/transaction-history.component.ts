@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
-import { faShareSquare, faFilter, faEllipsisH , faSearch} from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faShareSquare, faFilter, faEllipsisH, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-transaction-history',
@@ -12,9 +13,11 @@ export class TransactionHistoryComponent implements OnInit {
   public exportIcon = faShareSquare;
   public filterIcon = faFilter;
   public query: string = "";
-  public transactionHistory:any[] = [];
+  public transactionHistory: any[] = [];
   public dotsIcon = faEllipsisH;
   public searchIcon = faSearch;
+  public upArrow = faAngleUp;
+  public downArrow = faAngleDown;
 
   constructor(private dataService: DataService) { }
 
@@ -27,5 +30,11 @@ export class TransactionHistoryComponent implements OnInit {
       this.transactionHistory = response.transactions;
     })
   }
+
+
+  getShortName(fullName:any) {
+    return fullName.split(' ').map((n:any) => n[0]).join('');
+  }
+
 
 }
