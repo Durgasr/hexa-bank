@@ -28,7 +28,7 @@
 }
 
 .headings {
-    background-color: $gray_color;
+    background-color: lightgray;
     color: $primary_color;
     font-size: 13px;
 }
@@ -56,6 +56,37 @@ td {
     color: $primary_color;
     font-size: 11px;
     font-weight: bold
+}
+
+.name {
+    margin: 0px;
+}
+
+.txt-flex {
+    display: flex;
+    color: $primary_color;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.name {
+    margin: 0px;
+    padding-top: 4px;
+}
+
+.short-name {
+    border: 1px solid $gray_color;
+    font-size: 8px;
+    margin: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 12px;
+    padding: 2px;
+    border-radius: 12px;
+    background-color: lightgreen;
+    color: $primary_color;
+    font-weight: bold;
 }
 
 .txt-styling1 {
@@ -104,7 +135,6 @@ td {
     padding-left: 2px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    ;
 }
 
 input:focus {
@@ -156,35 +186,4 @@ input:focus {
         margin: 0px;
         color: $primary_color;
     }
-}
-
-.name {
-    margin: 0px;
-}
-
-.txt-flex {
-    display: flex;
-    color: $primary_color;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-
-.name {
-    margin: 0px;
-    padding-top: 4px;
-}
-
-.short-name {
-    border: 1px solid $gray_color;
-    font-size: 8px;
-    margin: 0px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-right: 12px;
-    padding: 2px;
-    border-radius: 12px;
-    background-color: lightgreen;
-    color: $primary_color;
-    font-weight: bold;
 }
