@@ -92,7 +92,6 @@ export class MoneyStatisticsComponent implements OnInit {
 
   getMoneyStatisticsData() {
     this.dataService.getData().subscribe((data: any) => {
-      console.log(data);
       this.moneyDetails = Object.keys(data.money_statistics).map(key => ({ type: key, value: data.money_statistics[key] }))
     })
   }
