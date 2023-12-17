@@ -1,0 +1,40 @@
+<div class="transaction-history-card">
+    <div class="criteria">
+        <p>Transaction History</p>
+        <div class="filters">
+            <div>
+                <fa-icon [icon]="searchIcon" class="search"></fa-icon>
+                <input type="text" [(ngModel)]="query" placeholder="Search" class="search-bar"/>
+            </div>
+            <div>
+                <fa-icon [icon]="filterIcon" class="search"></fa-icon>
+                <input type="text" [(ngModel)]="query" placeholder="Filter" class="filter"/>
+            </div>
+            <div class="filters1">
+                <fa-icon [icon]="exportIcon"></fa-icon>
+                <p>Export</p>
+            </div>
+        </div>
+    </div>
+    <table>
+        <tr class="headings">
+            <th>Date</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Type</th>
+            <th>Time</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let history of transactionHistory | filter: query">
+            <td class="txt-styling">{{history.date | date:'mediumDate'}}</td>
+            <td class="txt-styling">{{history.name}}</td>
+            <td [ngClass]="history.status=='Success'?'green-txt':history.status=='Failed'?'red-txt':'orange-txt'">
+                {{history.status}}</td>
+            <td class="txt-styling1">{{history.type}}</td>
+            <td class="txt-styling1">{{history.date | date: 'shortTime'}}</td>
+            <td class="txt-styling">{{history.amount}}</td>
+            <td class="txt-styling"><fa-icon [icon]="dotsIcon"></fa-icon></td>
+        </tr>
+    </table>
+</div>

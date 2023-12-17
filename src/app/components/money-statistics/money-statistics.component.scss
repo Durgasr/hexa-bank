@@ -1,0 +1,99 @@
+@import '~/../../../../styles.scss';
+
+.money-statistics-card{
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+    background-color: $secondary_color;
+    border-radius: 5px;
+    padding:25px;
+    padding-top:4px;
+    padding-bottom:4px;
+    margin-left:30px;
+}
+
+.criteria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p{
+        margin: 0px;
+        color: $primary_color;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    select{
+        padding:4px;
+        font-weight: bold;
+        border: 1px solid $gray_color;
+        border-radius: 8px;
+        margin-right:8px
+    }
+    fa-icon{
+        color: $gray_color;
+        font-size:20px
+    }
+}
+
+.money{
+    display: flex;
+    flex-direction: row;
+    // padding-top:4px;
+    span{
+        color: black;
+    }
+    p{
+        margin: 0px;
+        padding-bottom:5px
+    }
+}
+
+.income{
+    color: green;
+    
+}
+
+.expense{
+    color: red;
+}
+
+.invest{
+    color: orange;
+}
+
+.trends{
+    display: flex;
+    flex-direction: row;
+    p{
+        margin:0px;
+        font-size:11px
+    }
+    fa-icon{
+        font-size:11px;
+        margin-right:3px;
+    }
+}
+
+.money-data{
+    padding-right:80px;
+
+    p{
+        margin:0px;
+    }
+}
+
+.statistics-type{
+    color:$gray_color;
+    font-size: 11px;
+}
+
+.money-value{
+    color: $primary_color;
+    font-size:14px;
+    font-weight: bold; 
+}
+
+.chart-container{
+    height:250px;
+    width:640px
+}

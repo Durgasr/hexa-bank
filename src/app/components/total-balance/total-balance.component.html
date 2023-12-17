@@ -1,0 +1,12 @@
+<div class="total-balance-card">
+    <div class="description">
+        <p>Total Balance</p>
+        <fa-icon [icon]="dotsIcon"></fa-icon>
+    </div>
+    <p class="total-amount">{{totalAmount}}</p>
+    <progress class="progress-bar" value="{{paymentDoneInPercentage}}" max="100"></progress>
+    <div class="money-pay">
+        <p>Monthly payment limit</p>
+        <p><span>{{paymentDone}}</span>/{{monthlyPayLimit}}</p>
+    </div>
+</div>

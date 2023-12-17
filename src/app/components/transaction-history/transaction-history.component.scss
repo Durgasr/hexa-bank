@@ -1,0 +1,164 @@
+@import '~/../../../../styles.scss';
+
+.criteria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p{
+        margin:0px;
+        font-weight: bold;
+        font-size: 13px;
+        color: $primary_color;
+    }
+}
+
+.transaction-history-card{
+    width:690px;
+    background-color: $secondary_color;
+    padding: 25px;
+    margin-top:6px;
+    margin-left:30px;
+    padding-top: 4px;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+}
+
+.filters1{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid $gray_color;
+    margin-left:4px;
+    margin-right:4px;
+    
+    fa-icon{
+        font-size:12px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+.headings{
+    background-color: $gray_color;
+    color: $primary_color;
+    font-size: 14px;
+    padding:6px;
+    
+}
+
+table{
+    width:690px;
+    border: 1px solid $gray_color;
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid $gray_color;
+    border-collapse: collapse;
+    padding-top:3px;
+    padding-bottom: 3px;
+}
+
+td{
+    border: 1px solid $gray_color;
+    border-collapse: collapse;
+    padding-left:8px;
+    font-size: 13px;
+    padding-top:2px;
+    padding-bottom: 2px;
+}
+
+.txt-styling{
+    color: $primary_color;
+    font-size:12px;
+    font-weight: bold
+}
+
+.txt-styling1{
+    color: $gray_color;
+    font-size:12px;
+    font-weight: bold
+}
+
+.green-txt{
+    color: green;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.red-txt{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.orange-txt{
+    color: orange;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.search-bar{
+    height:17px;
+    margin-right:8px;
+    margin-bottom:6px;
+    border: 1px solid $gray_color;
+    border-left:0px ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:100px
+}
+
+.filter{
+    height:17px;
+    margin-right:8px;
+    margin-bottom:6px;
+    border: 1px solid $gray_color;
+    border-left:0px ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:70px
+}
+
+.search{
+    color: $gray_color;
+    font-size: 11px;
+    border:1px solid $gray_color;
+    height:20px;
+    padding:3px;
+    padding-top:4px;
+    border-right: 0px;
+    padding-left:2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;;
+}
+
+input:focus {
+    outline: none !important;
+    border-width: 1px solid $gray_color;
+    border-left:0px;
+}
+
+  
+.filters1{
+    border: 1px solid $gray_color;
+    color: $gray_color;
+    font-size: 14px;
+    padding:6px;
+    padding-top:3px;
+    // padding-bottom: 0px;
+    border-radius: 4px;
+    height:10px;
+
+    fa-icon{
+        margin-right:3px;
+    }
+    p{
+        margin:0px;
+        color: $primary_color;
+    }
+}

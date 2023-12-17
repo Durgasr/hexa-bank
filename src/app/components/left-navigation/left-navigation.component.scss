@@ -1,0 +1,118 @@
+$card_background_color: grey;
+$primary_color:#0d0a40;
+$container_width: 210px;
+$secondary_color: #fff;
+$font-color: #808080;
+
+.left-navi-container{
+    width:$container_width;
+    padding-left: 30px;
+}
+
+.user-container{
+    display: flex;
+    flex-direction: row;
+    padding-bottom:10px;
+    margin-bottom:3px;
+    box-shadow: 0px 2px $secondary_color
+}
+
+.image{
+    height:30px;
+    width: 30px; 
+    border-radius: 40px; 
+}
+
+
+.name-style{
+    color: $primary_color;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:15px;
+    padding-top:5px;
+    font-size: 14px;
+    margin: 0px;
+}
+
+
+.icon-style{
+    display: flex;
+    flex-direction: column;
+    padding-top:5px;
+}
+
+.arrow-styles{
+    font-size: 10px;
+    margin-left: 40px;
+}
+
+.title{
+    font-size:12px;
+    font-weight: bold;
+    color: $font-color;
+    padding-top:8px;
+    padding-bottom: 7px;
+    margin: 0px;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    color:  $font-color;
+    padding-left:20px;
+    font-size:14px;
+}
+
+.menu-txt{
+    margin-left: 15px;
+}
+
+.menu-icons{
+    padding-top: 15px;
+}
+
+.toggle-icon{
+    margin-top:10px;
+    margin-left:30px;
+    font-size:22px;
+    color: grey;
+    
+}
+
+.menu-container:hover{
+    color:$primary_color;
+    background-color: $secondary_color;
+    border-radius: 7px;
+}
+
+.btn-style{
+    background-color: $primary_color;
+    width:40px;
+    padding: 8px;
+    font-size:20px;
+    color: $secondary_color;
+    border-radius: 50px;
+    border: 2px dashed $primary_color;
+    margin-left:70px;
+    margin-top:50px;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px $primary_color;
+    
+}
+
+.new-payment-container{
+    width: 190px;
+    border-radius: 30px;
+    border-color: $font-color;
+    border-style: dashed;
+    padding-top: 8px;
+    padding-bottom: 22px;
+    margin-top:10px;
+}
+
+.payment-txt{
+    margin-left:50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: $primary_color;
+}
+

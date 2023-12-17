@@ -1,0 +1,62 @@
+@import '~/../../../../styles.scss';
+
+.total-balance-card{
+    padding:20px;
+    padding-top:4px;
+    padding-bottom:4px;
+    display: flex;
+    flex-direction: column;
+    width:700px;
+    background-color: $secondary_color;
+    border-radius:7px;
+    margin-left:30px;
+    margin-top:6px;
+    margin-bottom:6px;
+}
+
+.description{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p{
+        color: $primary_color;
+        font-size:13px;
+        font-weight:bold;
+        margin: 0px;
+    }
+    fa-icon{
+        color: grey;
+        font-size:20px
+    }
+}
+
+.total-amount{
+    color: $primary_color;
+    font-size: 15px;
+    font-weight: bold;
+    margin:0px;
+    
+}
+
+.progress-bar{
+    width:700px;   
+}
+
+.money-pay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p{
+        color: $gray_color;
+        margin:0px;
+        font-size: 11px;
+    }
+
+    span{
+        font-size: 11px;
+        color:$primary_color;
+        font-weight: bold;
+    }
+}
+
