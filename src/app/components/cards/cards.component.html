@@ -11,6 +11,7 @@
     <p class="payment-style"><span>+</span> Add New Card</p>
     <hr />
     <p class="quick-actions">Quick Actions</p>
+    <!-- <div *ngFor="let action of actions" class="action-style"> -->
     <div class="action-style">
         <div class="action-style1">
             <fa-icon [icon]="topUpIcon"></fa-icon>
@@ -33,35 +34,87 @@
         </div>
 
         <div class="data-style">
-            <div class="data-style1">
-                <div class="data-style2">
-                    <fa-icon [icon]="mobileIcon" class="mobile-icon-style"></fa-icon>
-                    <div>
-                        <p class="mobile-txt">New Mobile</p>
-                        <p class="target-style">Target $20,000</p>
+            <div class="each-item">
+                <div class="data-style1">
+                    <div class="data-style2">
+                        <fa-icon [icon]="mobileIcon" class="mobile-icon-style"></fa-icon>
+                        <div>
+                            <p class="mobile-txt">New Mobile</p>
+                            <p class="target-style">Target $20,000</p>
+                        </div>
                     </div>
+                    <fa-icon [icon]="dotsIcon" class="three-dots"></fa-icon>
                 </div>
-                <fa-icon [icon]="dotsIcon" class="three-dots"></fa-icon>
+                <div class="total">
+                    <p>Total:$20,000</p>
+                </div>
+                <progress value="50" max="100" class="progress-bar"></progress>
             </div>
-            <div class="total">
-                <p>Total:$20,000</p>
-            </div>
-            <progress value="50" max="100" class="progress-bar"></progress>
-            <div class="data-style1">
-                <div class="data-style2">
-                    <fa-icon [icon]="tvIcon" class="mobile-icon-style"></fa-icon>
-                    <div>
-                        <p class="mobile-txt">New TV</p>
-                        <p class="target-style">Target $15,000</p>
+            <div class="each-item">
+                <div class="data-style1">
+                    <div class="data-style2">
+                        <fa-icon [icon]="tvIcon" class="mobile-icon-style"></fa-icon>
+                        <div>
+                            <p class="mobile-txt">New TV</p>
+                            <p class="target-style">Target $15,000</p>
+                        </div>
                     </div>
+                    <fa-icon [icon]="dotsIcon" class="three-dots"></fa-icon>
                 </div>
-                <fa-icon [icon]="dotsIcon" class="three-dots"></fa-icon>
-            </div>
-        </div>
-        <div class="total">
-            <p>Total:$15,000</p>
-        </div>
-        <progress value="50" max="100" class="progress-bar"></progress>
-    </div>
 
+                <div class="total">
+                    <p>Total:$15,000</p>
+                </div>
+                <progress value="50" max="100" class="progress-bar"></progress>
+            </div>
+            <div class="each-item">
+                <div class="data-style1">
+                    <div class="data-style2">
+                        <fa-icon [icon]="bicycleIcon" class="mobile-icon-style"></fa-icon>
+                        <div>
+                            <p class="mobile-txt">New Bicycle</p>
+                            <p class="target-style">Target $5,000</p>
+                        </div>
+                    </div>
+                    <fa-icon [icon]="dotsIcon" class="three-dots"></fa-icon>
+                </div>
+                <div class="total">
+                    <p>Total:$8,000</p>
+                </div>
+                <progress value="50" max="100" class="progress-bar"></progress>
+            </div>
+            <div class="each-item">
+                <div class="data-style1">
+                    <div class="data-style2">
+                        <fa-icon [icon]="taxiIcon" class="mobile-icon-style"></fa-icon>
+                        <div>
+                            <p class="mobile-txt">New Car</p>
+                            <p class="target-style">Target $100,000</p>
+                        </div>
+                    </div>
+                    <fa-icon [icon]="dotsIcon" class="three-dots"></fa-icon>
+                </div>
+                <div class="total">
+                    <p>Total:$200,000</p>
+                </div>
+                <progress value="50" max="100" class="progress-bar"></progress>
+            </div>
+            <div class="each-item">
+                <div class="data-style1">
+                    <div class="data-style2">
+                        <fa-icon [icon]="mobileIcon" class="mobile-icon-style"></fa-icon>
+                        <div>
+                            <p class="mobile-txt">New Mobile</p>
+                            <p class="target-style">Target $20,000</p>
+                        </div>
+                    </div>
+                    <fa-icon [icon]="dotsIcon" class="three-dots"></fa-icon>
+                </div>
+                <div class="total">
+                    <p>Total:$20,000</p>
+                </div>
+                <progress value="50" max="100" class="progress-bar"></progress>
+            </div>
+        </div>
+    </div>
 </div>

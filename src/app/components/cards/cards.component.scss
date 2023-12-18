@@ -178,7 +178,7 @@ progress:after {
     content: attr(value)'%';
     position: relative;
     top: -35px;
-    left: 290px;
+    left: 265px;
     color: $gray_color;
 }
 
@@ -253,7 +253,15 @@ progress:after {
 }
 
 .progress-bar {
-    width: 320px;
+    width: 300px;
     margin: 0px;
     margin-bottom: 4px;
+}
+
+.each-item {
+    border: 1px solid $gray_color;
+    padding: 10px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }

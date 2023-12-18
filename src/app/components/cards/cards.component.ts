@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faPlusSquare, faPaperPlane, faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons';
-import { faMobileAlt, faEllipsisH, faTv } from '@fortawesome/free-solid-svg-icons';
+import { faMobileAlt, faEllipsisH, faTv, faBicycle, faTaxi } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cards',
@@ -18,6 +18,8 @@ export class CardsComponent implements OnInit {
   public mobileIcon = faMobileAlt;
   public dotsIcon = faEllipsisH;
   public tvIcon = faTv;
+  public bicycleIcon = faBicycle;
+  public taxiIcon = faTaxi;
 
   constructor() { }
 
