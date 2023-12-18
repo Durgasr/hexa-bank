@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faThLarge, faList, faChartBar, faCreditCard, faChevronLeft, faChevronUp, faChevronDown, faToggleOff, faCog, faQuestionCircle, faMoon} from '@fortawesome/free-solid-svg-icons';
+import { faThLarge, faUniversity, faList, faChartBar, faCreditCard, faChevronLeft, faChevronUp, faChevronDown, faToggleOff, faCog, faQuestionCircle, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -18,11 +18,12 @@ export class LeftNavigationComponent implements OnInit {
   public settingsIcon = faCog;
   public helpIcon = faQuestionCircle;
   public darkModeIcon = faMoon;
-  public toggleIcon = faToggleOff
+  public toggleIcon = faToggleOff;
+  public bankIcon = faUniversity;
 
-  constructor(private dataService:DataService) { }
+  constructor(private dataService: DataService) { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
   }
 
 
