@@ -7,11 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
-  public url="https://1.api.fy23ey06.careers.ifelsecloud.com/";
+  public url = "https://1.api.fy23ey06.careers.ifelsecloud.com/";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getData():Observable<any>{
+  getData(): Observable<any> {
     return this.http.get(this.url);
   }
 }

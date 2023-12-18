@@ -15,13 +15,16 @@
                 <p class="statistics-type">{{details.type}}</p>
                 <p class="money-value">{{details.value.value}}</p>
                 <div class="trends">
-                    <fa-icon [icon]="lineChart" [ngClass]="details.type=='total_income'?'income': details.type=='total_expense'?'expense':'invest'"></fa-icon>
-                    <p [ngClass]="details.type=='total_income'?'income': details.type=='total_expense'?'expense':'invest'"> +{{details.value.trend}}% <span>from last month</span></p>
+                    <fa-icon [icon]="lineChart"
+                        [ngClass]="details.type=='total_income'?'income': details.type=='total_expense'?'expense':'invest'"></fa-icon>
+                    <p
+                        [ngClass]="details.type=='total_income'?'income': details.type=='total_expense'?'expense':'invest'">
+                        +{{details.value.trend}}% <span>from last month</span></p>
                 </div>
             </div>
-    </div>
+        </div>
     </div>
     <div class="chart-container">
         <canvas id="myChart"></canvas>
-      </div>
+    </div>
 </div>

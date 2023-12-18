@@ -11,7 +11,7 @@ import { Chart } from 'chart.js/auto';
 export class MoneyStatisticsComponent implements OnInit {
 
   public dotsIcon = faEllipsisH;
-  public moneyDetails: any[] =[];
+  public moneyDetails: any[] = [];
   public lineChart = faChartLine;
 
 
@@ -65,10 +65,10 @@ export class MoneyStatisticsComponent implements OnInit {
               pointStyle: 'circle',
               pointStyleWidth: 7,
               useBorderRadius: true,
-              boxHeight:5,
+              boxHeight: 5,
               color: "#0d0a40",
-              font:{
-                weight:'bold'
+              font: {
+                weight: 'bold'
               }
             },
             position: 'bottom'
