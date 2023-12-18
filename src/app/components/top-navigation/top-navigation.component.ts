@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faTimes, faSearch} from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelopeSquare, faBell, faUniversity, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -9,7 +9,7 @@ import { faEnvelopeSquare, faBell, faUniversity, faChevronLeft } from '@fortawes
 })
 export class TopNavigationComponent implements OnInit {
 
-  
+
   public hideTopNaviBar = false;
 
   public faTimes = faTimes;
@@ -18,14 +18,14 @@ export class TopNavigationComponent implements OnInit {
   public bellIcon = faBell;
   public bankIcon = faUniversity;
   public leftArrow = faChevronLeft;
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
 
-  hideTopNavBar(){
+  hideTopNavBar() {
     this.hideTopNaviBar = true;
   }
 
