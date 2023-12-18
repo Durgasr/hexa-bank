@@ -20,6 +20,7 @@
     margin-top: 6px;
     margin-left: 30px;
     padding-top: 4px;
+    border-radius:5px;
 }
 
 .filters {
@@ -44,6 +45,10 @@ th {
     border-collapse: collapse;
     padding-top: 3px;
     padding-bottom: 3px;
+
+    fa-icon{
+        font-size: 11px
+    }
 }
 
 td {

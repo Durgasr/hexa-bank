@@ -18,12 +18,12 @@
     </div>
     <table>
         <tr class="headings">
-            <th>Date</th>
-            <th>Name</th>
-            <th>Status</th>
-            <th>Type</th>
-            <th>Time</th>
-            <th>Amount</th>
+            <th>Date <fa-icon [icon]="sortIcon"></fa-icon></th>
+            <th>Name <fa-icon [icon]="sortIcon"></fa-icon></th>
+            <th>Status <fa-icon [icon]="sortIcon"></fa-icon></th>
+            <th>Type <fa-icon [icon]="sortIcon"></fa-icon></th>
+            <th>Time <fa-icon [icon]="sortIcon"></fa-icon></th>
+            <th>Amount <fa-icon [icon]="sortIcon"></fa-icon></th>
             <th>Action</th>
         </tr>
         <tr *ngFor="let history of transactionHistory | filter: query">
