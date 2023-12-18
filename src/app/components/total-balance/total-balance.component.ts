@@ -14,7 +14,7 @@ export class TotalBalanceComponent implements OnInit {
   public totalAmount?: number;
   public monthlyPayLimit?: number;
   public paymentDone?: number;
-  public paymentDoneInPercentage?:number;
+  public paymentDoneInPercentage?: number;
 
   constructor(private dataService: DataService) { }
 
